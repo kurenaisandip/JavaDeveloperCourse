@@ -1,0 +1,48 @@
+import java.sql.SQLOutput;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+
+public class twelveth {
+
+    public static void main(String[] args) {
+
+        // Map:
+        // A collection that associates objects called
+        // keys with objects called values.
+
+        Map<String, Integer> phoneNumbers = new HashMap<>();
+        phoneNumbers.put("Anish", 111111);
+        phoneNumbers.put("Ayush", 2232323);
+        phoneNumbers.put("Pradip", 2323234);
+
+
+        System.out.println(phoneNumbers.get("Pradip"));
+        System.out.println(phoneNumbers.containsKey("Pradip"));
+
+
+        // Maps don't have iterators
+        // keyset(): return a set of all keys in the map
+        // values(): returns a collection of  all values in the map
+
+
+        Set<String> nameSet = phoneNumbers.keySet();
+        for ( String s : nameSet) {
+            System.out.println("Names: " +s);
+        }
+
+
+        Collection<Integer> phoneCollection = phoneNumbers.values();
+        for (Integer i : phoneCollection) {
+            System.out.println("Number: " + i);
+        }
+
+
+        // iterating through hashmap using foreach loop
+        for (String name: phoneNumbers.keySet()){
+            Integer number = phoneNumbers.get(name);
+            System.out.println(name + " : " +number);
+        }
+    }
+}

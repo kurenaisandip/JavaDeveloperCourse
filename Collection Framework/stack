@@ -1,0 +1,33 @@
+import java.util.Stack;
+
+public class tenth {
+
+    public static void main(String[] args) {
+
+        // Stack:
+        // an ordered collection that allows adding and removing the "top" element
+        // providing Last-In, First-Out (LIFO) access
+
+
+
+        String data = { "to", "be", "or", "not", "to", "be"};
+        Stack<String> stack = new Stack<>();
+
+        // adding data to stack
+        for (String str: data){
+            stack.push(str);
+        }
+
+        // Stack behaviours
+        System.out.println("Stack:" + stack);
+        System.out.println("Size: " +stack.size());
+        System.out.println("Peek: " + stack.peek());  // returns the value at the top of the stack without removing it
+
+
+        // Removing element from stack
+        while(!stack.isEmpty()){
+            System.out.println(stack.pop()); // removes and returns the value
+        }
+        System.out.println();
+    }
+}

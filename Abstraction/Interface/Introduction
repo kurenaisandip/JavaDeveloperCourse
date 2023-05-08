@@ -1,0 +1,10 @@
+Inheriatnce has limitation, because java use single inheritance.
+a class can extend only only one super class
+
+To tackle this problem, java provides a features called interface that can represent a common type between several classess withour code 
+        Java can provide us with inheritance,multiple inheritance through interfaces.
+
+        Interface is a type that consits of a set of methods, declarations,so Interface
+
+        Interface is like a class but it contains only methods headers without parties
+        

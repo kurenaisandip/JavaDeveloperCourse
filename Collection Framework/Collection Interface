@@ -1,0 +1,15 @@
+import java.util.ArrayList;
+import java.util.Collection;
+
+public class third {
+
+    public static void main(String[] args) {
+
+        // Collections
+        Collection<String> bestApps = new ArrayList<>();
+        bestApps.add("Sandip");
+        bestApps.add("master Coding Pro");
+
+        System.out.println( bestApps.toString());
+    }
+}

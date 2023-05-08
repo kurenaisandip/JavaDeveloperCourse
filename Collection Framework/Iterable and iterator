@@ -1,0 +1,72 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class Second {
+
+    public static void main(String[] args) {
+
+        // Iterable and iterator
+
+        // Iterator
+        // An iterator is an object that implements the interface iterator.
+
+//        public Iterator<E> {     // return true if the iteration has more elements
+//            boolean hasNext();   // return the next element in the iteration
+//            E next();            // remove the last element returned by the iterator
+//            void remove();
+//        }
+
+//        Iterators
+//       The purpose of iterators is to provide a uniform way of accessing
+//       collection elements sequentially, so whatever kind of collection you
+//       are dealing with, and however it is implemented, you always know how
+//       to process its elements in turn.
+
+        // coll refers to an object which implements Collection
+        // ------ not the preferred idiom from java 5 on -----
+
+//        for (Iterator itr = coll.iterator(); itr.hasNext()){
+//            System.out.println(itr.next());
+
+        /** Iterable
+         *
+         * This code will work with anything that implements the interface
+         * iterable - that is, anything that can produce an iterator. this
+         * is the declaration of iterable:
+         *
+         * public Iterable<T>{
+         *     Iterator<T> iterator();  // returns an iterator over elements of type T
+         *     }
+         */
+
+//        The foreach statement, which you met in previous videos. Using
+//        foreach, we can write the preceding code more concisely:
+
+//        for(Object o : coll) {
+//            System.out.println(o);
+//        }
+
+//        In java 5 the collection interface was made to extend iterable, so any set
+//        list, or queue can be the target of foreach, as can arrays.
+
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Master Coding App");
+        list.add("Master Coding App Pro");
+        list.add("Master Coding Channel");
+
+        // Using iterators
+        Iterator <String> iterator = list.iterator();
+        while (iterator.hasNext()) {
+            System.out.print(iterator.next);
+        }
+
+        // for each
+        // You can use for each in all collections
+        for(String s: list){
+            System.out.print(s);
+        }
+        //for loop
+
+    }
+    }
+

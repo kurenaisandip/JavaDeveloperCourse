@@ -1,0 +1,19 @@
+Abstract Class
+
+-An Abstract class is a class that is declared abstract - it may or may not include abstract methods. Abstract classes cannot be instantiated, but they can be subclassed //advantage of abstract
+
+- abstract void moveTo(double deltaX, double deltaY);
+
+- Note: is a class inclue abstract methods, then the class itself must be  declared abstract as in:
+
+Abstract Class vs Interface
+
+Similarity:
+Abstract classses are similar to interafces. You cannot instantiate them and they may contain a mix of methods declared with or without an implementation.
+
+Difference:
+- Abstract Class:
+We can declare fields, that are not static and final, and defined public, protected and private concrete methods.
+
+- Interface:
+All fields are automatically public, static & final & all methods that we declare or define ( as default methods ) are public.

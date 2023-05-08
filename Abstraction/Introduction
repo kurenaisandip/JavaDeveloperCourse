@@ -1,0 +1,11 @@
+1. Composition:
+
+The Composition  is a way to design or implement has a relation.so, composition and inheritance both are design techniques.
+
+A class is supoosed to capture one abstraction, 
+
+Circle is a point (Wrong)
+Circle has a point (Right)
+
+// inheritance is used to implement the "is-a" relationship
+// composition is used to implement the "has-a " relationship

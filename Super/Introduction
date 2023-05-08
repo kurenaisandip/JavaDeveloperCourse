@@ -1,0 +1,37 @@
+Super Keyword
+
+- A constructor for a child class always starts with and invocation of one of the constructors in the parent class. If the Parent class has several cosntructors then the one which is invoked is determined by matching arugument lists.
+
+
+for example, we could define a second constructor for Movie that does not include an argument for lenegth.
+
+- It starts out by invoking the parent constructor that does not have an arugument for length.
+
+For Example;
+
+Class video
+{
+    String title;
+    int length;
+    boolean available;
+
+
+    // constructor  of the video class
+    public Video(String tt1, int lngth){
+        title = tt1; length = lngth;
+    }
+
+    class Movie extends video {
+        String director;
+        String rating;
+
+        // Constructor // 2nd step
+        public Movie(String tt1, int lngth, String dir, String rting){
+            super( tt1, lngth); // 1st step
+
+            director = dir;
+            rating = rting;
+
+        }
+    }
+}

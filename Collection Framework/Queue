@@ -1,0 +1,35 @@
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class eleventh {
+
+
+    public static void main(String[] args) {
+
+        // Oueue:
+        // an ordered collection that allows adding the "back" element and
+        //removing the "front" element, providing First_In, First_Out access
+
+
+        String[] data = {"to", "be", "or", "not", "to", "be"};
+        Queue<String> queue = new LinkedList<>();
+
+        // adding data to queue
+        for (String str: data
+             ) {
+            queue.add(str);
+        }
+
+
+        // Printing and analyzing the queue behaviour
+
+        System.out.println("queue:" +queue);
+        System.out.println("size: " +queue.size());
+        System.out.println("Peek: " + queue.peek()); // returns the value at the front of the queue without removing it
+
+
+        while (!queue.isEmpty()){
+            System.out.println(queue.remove() + ""); // removes and returns the value at the front of the queue
+        }
+    }
+}
